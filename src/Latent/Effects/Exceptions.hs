@@ -6,11 +6,11 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE ScopedTypeVariables   #-}
 
-module Effects.Exceptions where
+module Latent.Effects.Exceptions where
 
 import Prelude hiding (either)
 
-import General
+import Latent.Effects
 
 data Throwing x v :: * -> (* -> *) -> * where
   Throw  :: x ->  Throwing x v Void  NoSub

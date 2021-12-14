@@ -5,9 +5,9 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Effects.Memoization where
+module Latent.Effects.Memoization where
 
-import General
+import Latent.Effects
 
 data Thunking v :: * -> (* -> *) -> * where
   Thunk  ::         Thunking v Ptr (OneSub v)

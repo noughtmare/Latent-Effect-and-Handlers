@@ -8,7 +8,7 @@
 {-# LANGUAGE DeriveFunctor #-}
 
 
-module General where
+module Latent.Effects where
 
 import Control.Monad
 

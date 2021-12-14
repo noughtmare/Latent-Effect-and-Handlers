@@ -3,9 +3,9 @@
 {-# LANGUAGE KindSignatures #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Effects.Abstraction where
+module Latent.Effects.Abstraction where
 
-import General
+import Latent.Effects
 
 data Abstracting v :: * -> (* -> *) -> * where
   Var :: Int ->     Abstracting v v NoSub

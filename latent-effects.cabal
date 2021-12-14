@@ -1,0 +1,67 @@
+cabal-version:      2.4
+name:               latent-effects
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Jaro Reinders
+maintainer:         jaro.reinders@gmail.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files:
+    CHANGELOG.md
+    README.md
+
+library
+    exposed-modules:
+        Latent.Effects
+        Latent.Effects.Abstraction
+        Latent.Effects.Arithmetics
+        Latent.Effects.Delay
+        Latent.Effects.Errors
+        Latent.Effects.Exceptions
+        Latent.Effects.Memoization
+        Latent.Effects.Print
+        Latent.Effects.Reader
+        Latent.Effects.State
+        Latent.Features.Arithmetics
+        Latent.Features.CallByName
+        Latent.Features.CallByNeed
+        Latent.Features.CallByValue
+        Latent.Features.Let
+        Latent.Features.Print
+        Latent.Features.Staging
+
+    -- Modules included in this library but not exported.
+    -- other-modules:
+    other-extensions:
+        GADTs RankNTypes TypeOperators KindSignatures EmptyCase
+        FlexibleInstances MultiParamTypeClasses DeriveFunctor
+
+    build-depends:    base ^>=4.14.3.0
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Latent-Effect-and-Handlers
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+    other-extensions:
+        GADTs RankNTypes TypeOperators KindSignatures EmptyCase
+        FlexibleInstances MultiParamTypeClasses DeriveFunctor
+
+    build-depends:    base ^>=4.14.3.0
+    hs-source-dirs:   app
+    default-language: Haskell2010

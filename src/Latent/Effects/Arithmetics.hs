@@ -3,9 +3,9 @@
 {-# LANGUAGE KindSignatures #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Effects.Arithmetics where
+module Latent.Effects.Arithmetics where
 
-import General
+import Latent.Effects
 
 data Adding v :: * -> (* -> *) -> * where
   Nat   :: Integer  -> Adding v v NoSub

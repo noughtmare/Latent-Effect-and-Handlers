@@ -1,10 +1,10 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Features.Print where
+module Latent.Features.Print where
 
-import General
-import Effects.Print
+import Latent.Effects
+import Latent.Effects.Print
 
 import Prelude hiding (print)
 

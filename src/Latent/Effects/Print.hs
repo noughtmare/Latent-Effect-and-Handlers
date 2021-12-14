@@ -3,9 +3,9 @@
 {-# LANGUAGE KindSignatures #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Effects.Print where
+module Latent.Effects.Print where
 
-import General
+import Latent.Effects
 
 data Printing v :: * -> (* -> *) -> * where
   Print :: String -> Printing v v NoSub

@@ -4,11 +4,11 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE EmptyCase #-}
 
-module Effects.Errors where
+module Latent.Effects.Errors where
 
 import Prelude hiding (either)
 
-import General
+import Latent.Effects
 
 data Failing v :: * -> (* -> *) -> * where
   Err :: v -> Failing v Void NoSub

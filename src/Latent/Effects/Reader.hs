@@ -4,9 +4,9 @@
 {-# LANGUAGE KindSignatures #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Effects.Reader where
+module Latent.Effects.Reader where
 
-import General
+import Latent.Effects
 
 data Reading r ::  * -> (* -> *) -> * where
   Local  :: (r -> r) ->  Reading r a (OneSub a)

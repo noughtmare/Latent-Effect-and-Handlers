@@ -3,13 +3,13 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Features.CallByNeed where
+module Latent.Features.CallByNeed where
 
-import General
-import Effects.Abstraction
-import Effects.Memoization
-import Effects.Reader
-import Effects.Delay
+import Latent.Effects
+import Latent.Effects.Abstraction
+import Latent.Effects.Memoization
+import Latent.Effects.Reader
+import Latent.Effects.Delay
 
 data LamExpr e = VarExpr Int | AbsExpr e | AppExpr e e
 

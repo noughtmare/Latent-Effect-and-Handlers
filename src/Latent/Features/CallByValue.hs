@@ -2,10 +2,10 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE RankNTypes #-}
 
-module Features.CallByValue where
+module Latent.Features.CallByValue where
 
-import General
-import Effects.Abstraction
+import Latent.Effects
+import Latent.Effects.Abstraction
 
 import Prelude hiding (abs)
 

@@ -10,13 +10,13 @@
 {-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE OverlappingInstances #-}
 
-module Features.Staging where
+module Latent.Features.Staging where
 
-import General
-import Effects.Delay hiding (Ptr)
-import Effects.Reader
-import Effects.Memoization
-import Features.CallByValue
+import Latent.Effects
+import Latent.Effects.Delay hiding (Ptr)
+import Latent.Effects.Reader
+import Latent.Effects.Memoization
+import Latent.Features.CallByValue
 
 import Control.Monad
 import Prelude hiding (lookup, abs)

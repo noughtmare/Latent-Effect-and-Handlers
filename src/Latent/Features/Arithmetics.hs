@@ -1,10 +1,10 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Features.Arithmetics where
+module Latent.Features.Arithmetics where
 
-import General
-import Effects.Arithmetics
+import Latent.Effects
+import Latent.Effects.Arithmetics
 
 data Arith n = Num Int | Add n n
 

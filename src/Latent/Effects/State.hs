@@ -3,9 +3,9 @@
 {-# LANGUAGE KindSignatures #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Effects.State where
+module Latent.Effects.State where
 
-import General
+import Latent.Effects
 
 data Mutating v :: * -> (* -> *) -> * where
   Get  ::       Mutating v v   NoSub

@@ -5,9 +5,9 @@
 {-# LANGUAGE DeriveFunctor #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Effects.Delay where
+module Latent.Effects.Delay where
 
-import General
+import Latent.Effects
 
 data Suspending v :: * -> (* -> *) -> * where
   Suspend  ::         Suspending v Ptr  (OneSub v)

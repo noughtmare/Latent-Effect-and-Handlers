@@ -1,10 +1,10 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Features.Let where
+module Latent.Features.Let where
 
-import General
-import Effects.Abstraction
+import Latent.Effects
+import Latent.Effects.Abstraction
 
 import Prelude hiding (abs)
 
